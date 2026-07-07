@@ -5,3 +5,14 @@ A search agent finds recent, relevant sources; a reader agent scrapes the most u
 deeper content; a writer chain drafts a structured report from the combined research; and a 
 critic chain reviews the report and provides feedback. Includes a Streamlit UI for running the 
 pipeline interactively and viewing results at each stage.
+
+Multi_agent_AI_search_system/
+│
+├── agents.py           # Defines the search agent, reader agent, writer chain, and critic chain
+├── pipeline.py          # Orchestrates the multi-agent pipeline (search → read → write → critique)
+├── tools.py              # Custom tools used by the agents (e.g. web search, scraping)
+├── app.py                 # Streamlit UI for running the pipeline interactively
+├── requirement.txt   # Python dependencies
+├── .env                       # API keys / environment variables (not committed — see .gitignore)
+├── .gitignore              # Files/folders excluded from version control
+└── README.md         # Project documentation
